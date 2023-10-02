@@ -7,22 +7,27 @@
 	let dark = false;
   
 	function handleLogin() {
-	  // Handle login logic here
+
 	  console.log(`Email: ${email}, Password: ${password}`);
+	
 	}
 
 	function darkMode() {
+
 		dark = !dark;
+	
 	}
+
   </script>
   
   
 
 
-  <main class={dark? "dark" : "light"}>
+  <div class={dark? "dark all" : "light all"}>
 	
-	<h1 class={dark? "darkText" : "lightText"}>Signup</h1>
-	<form class={dark? "darkForm" : "lightForm"} on:submit|preventDefault={handleLogin}>
+	<h1 class={dark? "darkText" : "lightText"}>SIGNUP</h1>
+	
+	<form class={dark? "darkForm loginForm" : "lightForm loginForm"} on:submit|preventDefault={handleLogin}>
 	  <label for="email" >Email:</label>
 	  <input id="email" type="email" bind:value={email} required />
   
@@ -31,8 +36,10 @@
   
 	  <button type="submit">Login</button>
 	</form>
+
 	<LightSwitch on:click={darkMode}/>
-  </main>
+  
+</div>
   
 
   <style>
@@ -58,7 +65,7 @@
 	.lightForm {
 		background-color:#222222; ;
 	}
-	main {
+	.all {
 	  display: flex;
 	  flex-direction: column;
 	  justify-content: center;
@@ -68,7 +75,7 @@
 		
 	}
   
-	form {
+	.loginForm {
 	  display: flex;
 	  flex-direction: column;
 	  gap: 1rem;
