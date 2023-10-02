@@ -63,7 +63,7 @@
 		background-color: #dddada;
 	}
 	.lightForm {
-		background-color:#222222; ;
+		background-color: #222222; ;
 	}
 	.all {
 	  display: flex;
@@ -81,7 +81,6 @@
 	  gap: 1rem;
 	  padding: 2rem;
 	  border-radius: 1rem;
-	  background-color: white;
 	  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 	}
   
